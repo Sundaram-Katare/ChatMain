@@ -34,7 +34,7 @@ const ContactsContainer = () => {
         
         getContacts();
         getChannels();
-    })
+    }, []);
 
 
     return (

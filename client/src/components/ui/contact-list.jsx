@@ -20,10 +20,10 @@ const ContactList = ({ contacts, isChannel = false }) => {
         <>
             <div className="mt-5  ">
                 {contacts.map((contact) => (
-                    <div key={contact._id} className={`pl-10 py-2 transition-all duration-300 cursor-pointer ${selectedChatData && selectedChatData._id === contact._id ? "bg-[#2417ff] hover:bg-[#8417ff]" : "hover:bg-[#f1f1f111] "}`}
+                    <div key={contact._id} className={`pl-10 py-2 transition-all text-black duration-300 cursor-pointer ${selectedChatData && selectedChatData._id === contact._id ? "bg-black text-white hover:bg-gray-600" : "hover:bg-[#f1f1f111] "}`}
                         onClick={() => handleClick(contact)}
                     >
-                        <div className="flex gap-5 items-center justify-start text-neutral-300">
+                        <div className="flex gap-5 items-center justify-start font-semibold">
                             {
                                 !isChannel &&
                                 <Avatar className={`h-10 w-10 rounded-full overflow-hidden ${getColor(contact.color)}`}>
@@ -43,7 +43,7 @@ const ContactList = ({ contacts, isChannel = false }) => {
                             }
                             {
                                 isChannel &&
-                                <div className="bg-[#ffffff22] h-10 w-10 flex items-center justify-center rounded-full " key={contact._id}>
+                                <div className="bg-[#EBC931] h-10 w-10 flex items-center justify-center rounded-full " key={contact._id}>
                                     #
                                 </div>
                             }

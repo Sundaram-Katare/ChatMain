@@ -141,10 +141,10 @@ const MessageBar = () => {
                         </div>
                     </div>
                 </div>
-                <button className='bg-[#8417ff] rounded-md flex items-center justify-center p-5 hover:bg-[#741bda] hover:scale-125 focus:border-none focus:outline-none focus:text-white duration-300 transition-all'
+                <button className='bg-[#EBC931] rounded-md flex items-center justify-center p-5 hover:bg-[#EBC931] hover:scale-125 focus:border-none focus:outline-none focus:text-white duration-300 transition-all'
                     onClick={handleSendMessage}
                 >
-                    <IoSend className="text-2xl" />
+                    <IoSend className="text-2xl text-black" />
                 </button>
             </div>
         </>

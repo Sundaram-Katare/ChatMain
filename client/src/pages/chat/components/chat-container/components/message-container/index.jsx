@@ -80,7 +80,7 @@ const MessageContainer = () => {
             return (
                 <div key={message._id} ref={isLast ? scrollRef : null}>
                     {showDate && (
-                        <div className="text-center text-gray-500 my-2">
+                        <div className="text-center text-black my-2">
                             {moment(message.timestamp).format("LL")}
                         </div>
                     )}
@@ -119,17 +119,17 @@ const MessageContainer = () => {
         return (
             <div className={`${message.sender === selectedChatData?._id ? "text-left" : "text-right"}`}>
                 {message.messageType === "text" && (
-                    <div className={`${isFromCurrentUser ? "bg-[#8417ff]/5 text-[#8417ff]/90 border-[#8417ff]/50" :
+                    <div className={`${isFromCurrentUser ? "bg-[#EBC931] text-black border-[#EBC931]/50" :
                         "bg-[#2a2b33]/5 text-white/80 border-white/20"
-                        } border inline-block p-4 rounded my-1 max-w-[50%] break-words`}>
+                        } border inline-block px-4 py-1 rounded-2xl my-1 max-w-[50%] break-words`}>
                         {message.content}
                     </div>
                 )}
                 {
                     message.messageType === "file" &&
-                    (<div className={`${isFromCurrentUser ? "bg-[#8417ff]/5 text-[#8417ff]/90 border-[#8417ff]/50" :
+                    (<div className={`${isFromCurrentUser ? "bg-[#EBC931]/10 text-black border-[#EBC931]/50" :
                         "bg-[#2a2b33]/5 text-white/80 border-white/20"
-                        } border inline-block p-4 rounded my-1 max-w-[50%] break-words`}>
+                        } border inline-block p-4 rounded-lg my-1 max-w-[50%] break-words`}>
 
                         {/* pass the file path string to checkIfImage and render accordingly */}
                         {message.fileUrl ? (
@@ -179,9 +179,9 @@ const MessageContainer = () => {
                 {message.messageType === "text" && (
                     <div
                         className={`${message.sender._id !== userInfo._id
-                                ? "bg-[#8417ff]/5 text-[#8417ff]/90 text-white border-[#8417ff]/50 "
-                                : "bg-[#2a2b33]/5 text-white/90 border-[#ffff]/20"
-                            } border inline-block p-4 rounded my-1 max-w-[50%] break-words`}
+                                ? "bg-[#EBC931] text-black border-[#EBC931]/50 "
+                                : "bg-[#EBC931]/5 text-black  border-[#ffff]/20"
+                            } border inline-block px-4 py-1  rounded-2xl  my-1 max-w-[50%] break-words`}
                     >
                         {message.content}
                     </div>
@@ -190,9 +190,9 @@ const MessageContainer = () => {
                 {message.messageType === "file" && (
                     <div
                         className={`${message.sender._id === userInfo.id
-                                ? "bg-[#8417ff]/5 text-[#8417ff]/90 text-white border-[#8417ff]/50"
+                                ? "bg-[#EBC931]/10 text-black border-[#EBC931]/50"
                                 : "bg-[#2a2b33]/5 text-white/90 border-[#ffff]/20"
-                            } border inline-block p-4 rounded my-1 max-w-[50%]`}
+                            } border inline-block p-4 rounded-lg my-1 max-w-[50%]`}
                     >
                         {checkIfImage(message.fileUrl) ? (
                             <div

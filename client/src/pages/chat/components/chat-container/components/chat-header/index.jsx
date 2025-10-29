@@ -8,7 +8,7 @@ const ChatHeader = () => {
   const { closeChat, selectedChatData, selectedChatType } = useAppStore();
   return (
     <>
-      <div className="h-[10vh] border-b-2 border-[#2f303b] flex items-center justify-between px-20  ">
+      <div className="h-[10vh] border-b-2 border-[#2f303b] bg-black flex items-center justify-between px-20  ">
         <div className="flex gap-5 items-center  w-full justify-between">
           <div className="flex gap-3 items-center justify-center  ">
             <div className="w-12 h-12 relative">
@@ -43,8 +43,8 @@ const ChatHeader = () => {
           </div>
 
           <div className="flex items-center justify-center gap-5">
-            <button className='text-neutral-500 focus:border-none focus:outline-none focus:text-white duration-300 transition-all'>
-              <RiCloseFill className='text-3xl '
+            <button className='text-gold-500 focus:border-none focus:outline-none focus:text-white duration-300 transition-all'>
+              <RiCloseFill className='text-3xl font-extrabold'
                 onClick={closeChat}
               />
             </button>

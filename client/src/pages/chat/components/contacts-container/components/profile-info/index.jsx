@@ -36,7 +36,7 @@ const ProfileInfo = () => {
 
   return (
     <>
-      <div className="absolute bottom-0 h-16 fle justify-between px-10 w-full bg-[#2a2b33]">
+      <div className="absolute bottom-0 h-16 fle justify-between px-10 w-full bg-black/80 pt-2">
         <div className="flex gap-3 items-center justify-center">
           <div className="w-12 h-12 relative">
             <Avatar className={`h-12 w-12 rounded-full overflow-hidden ${getColor(userInfo.color)}`}>
@@ -60,7 +60,7 @@ const ProfileInfo = () => {
             <TooltipProvider>
               <Tooltip>
                 <TooltipTrigger><FiEdit 
-                className="text-purple-500 text-xl font-medium" 
+                className="text-yellow-500 text-xl font-medium" 
                 onClick={() => navigate("/profile") } 
                 /></TooltipTrigger>
                 <TooltipContent className="bg-[#1c1b1e] border-none text-white">

@@ -1,6 +1,6 @@
 import { Tabs, TabsTrigger, TabsList, TabsContent } from '../../components/ui/tabs';
 import { Input } from '../../components/ui/input';
-import Background from '../../assets/login2.png';
+import Background from '../../assets/bgLogin.webp';
 import { Button } from '../../components/ui/button';
 import { useState } from 'react';
 import { toast } from 'sonner';

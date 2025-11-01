@@ -51,7 +51,8 @@ export const login = async ( req, res, next) => {
         }
 
         const auth = await compare(password, user.password);
-
+        console.log(auth);
+        
         if(!auth) {
             return res.status(400).send("Password is incorrect");
         }

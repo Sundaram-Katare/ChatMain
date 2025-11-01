@@ -6,7 +6,7 @@ import { useEffect, useRef, useState } from "react";
 import { MdFolderZip } from 'react-icons/md';
 import { IoMdArrowRoundDown } from 'react-icons/io';
 import { IoCloseSharp } from "react-icons/io5";
-import { Avatar, AvatarImage } from "@/components/ui/avatar";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const MessageContainer = () => {
     const { selectedChatType, selectedChatData, userInfo, selectedChatMessages, setSelectedChatMessages, setIsDownloading, setFileDownloadProgress } = useAppStore();
@@ -120,7 +120,7 @@ const MessageContainer = () => {
             <div className={`${message.sender === selectedChatData?._id ? "text-left" : "text-right"}`}>
                 {message.messageType === "text" && (
                     <div className={`${isFromCurrentUser ? "bg-[#EBC931] text-black border-[#EBC931]/50" :
-                        "bg-[#2a2b33]/5 text-white/80 border-white/20"
+                        "bg-black text-white/80 border-white/20"
                         } border inline-block px-4 py-1 rounded-2xl my-1 max-w-[50%] break-words`}>
                         {message.content}
                     </div>

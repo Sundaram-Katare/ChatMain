@@ -1,20 +1,7 @@
 # 💬 BuzzNet Chat App  
-**Synchronous Chat App** is a full-stack application built for seamless **instant messaging** between users.  
+**BuzzNet Chat App** is a full-stack application built for seamless **instant messaging** between users.  
 It allows people to create or join chat rooms, exchange messages in real time, and stay connected with a **clean, responsive UI**.  
 Powered by **Socket.IO**, the app ensures low-latency, event-driven communication.  
-
----
-
-## 🌟 Why This Chat App?  
-Most messaging apps are bloated with unnecessary features.  
-This project focuses on the **core essentials of real-time communication**:  
-
-- ⚡ Instant delivery of messages  
-- 👥 Simple room-based communication  
-- 🔒 Secure authentication for users  
-- 🎨 A minimal but modern UI for productivity  
-
-This makes it perfect for teams, study groups, events, or personal use.  
 
 ---
 
@@ -24,7 +11,8 @@ This makes it perfect for teams, study groups, events, or personal use.
 - 👤 **User Authentication** → Login/Signup with JWT for secure sessions  
 - 📡 **Live User Status** → Show active users in a room  
 - 🎨 **Modern UI** → Styled with TailwindCSS + ShadCN  
-- 📱 **Responsive Design** → Works on desktop and mobile  
+- 📱 **Responsive Design** → Works on desktop and mobile
+- 📁 **Files Sharing**  → Allows to share files and images
 
 ---
 
@@ -33,7 +21,8 @@ This makes it perfect for teams, study groups, events, or personal use.
 - ⚛️ **React.js** → Component-based UI  
 - 🎨 **TailwindCSS + ShadCN** → Clean, responsive styling  
 - 🌐 **Socket.IO Client** → Real-time messaging  
-- 🔐 **JWT** → Secure session management  
+- 🔐 **JWT** → Secure session management
+- 🗽 **Justand** → For state management 
 
 ### Backend  
 - 🚀 **Node.js + Express.js** → REST API & server logic  
@@ -49,18 +38,6 @@ This makes it perfect for teams, study groups, events, or personal use.
 3. **Send Messages** → Messages sent are instantly broadcast via Socket.IO  
 4. **Room Updates** → Active users and new messages appear live  
 5. **Persistent Data** → Messages and users stored in MongoDB  
-
----
-
-## 🚧 Future Enhancements 
-- 📱 Mobile app with React Native  
-- 🖼️ File & media sharing in chat  
-- 🎙️ Voice & video call integration  
-- 🔔 Push notifications for new messages  
-- 🛡️ End-to-end encryption for private rooms  
-
----
-
 
 ---
 
